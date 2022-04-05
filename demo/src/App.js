@@ -1,12 +1,9 @@
-import IndexRouter  from "./router/IndexRouter";
+import IndexRouter from "./router/IndexRouter";
+
+import './App.css'
 
 function App() {
-
-  return <div>
-   <IndexRouter/>
-   
-  </div>
-
+  return <IndexRouter></IndexRouter>
 }
 
 export default App;
