@@ -27,12 +27,13 @@ export default function NewsSandBox() {
             margin: '24px 16px',
             padding: 24,
             minHeight: 280,
+            overflow:"auto",
           }}>
           <Routes>
             <Route path="/home" element={<Home />}></Route>
             <Route path="/user-manage/list" element={<UserList />}></Route>
-            <Route path="/right-management/role/list" element={<RoleList />}></Route>
-            <Route path="/right-management/right/list" element={<RightList />}></Route>
+            <Route path="/right-manage/role/list" element={<RoleList />}></Route>
+            <Route path="/right-manage/right/list" element={<RightList />}></Route>
             <Route path="/" element={<Navigate to="/home" replace />}></Route>
             <Route path="*" element={<NotFund></NotFund>}></Route>
           </Routes>
